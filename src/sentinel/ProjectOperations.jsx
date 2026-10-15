@@ -1,4 +1,5 @@
 
+
 import { ExternalLink, FileText, Github } from "lucide-react";
 import SectionHeader from "./SectionHeader.jsx";
 
@@ -109,4 +110,3 @@ export default function ProjectOperations() {
     </section>
   );
 }
-
