@@ -7,7 +7,7 @@ export default function SecurityClearance() {
   const [unlocked, setUnlocked] = useState(false);
 
   async function downloadResume() {
-    const response = await fetch("/resume.pdf");
+    const response = await fetch("/Resume.pdf");
     const blob = await response.blob();
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
