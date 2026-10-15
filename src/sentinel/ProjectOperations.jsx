@@ -1,3 +1,4 @@
+
 import { ExternalLink, FileText, Github } from "lucide-react";
 import SectionHeader from "./SectionHeader.jsx";
 
@@ -11,12 +12,18 @@ const projects = [
     features: ["IOC Extraction", "MITRE ATT&CK Mapping", "AbuseIPDB enrichment", "PDF reports", "CSV IOC export"],
   },
   {
-    name: "Operation PhantomNet",
+    name: "Operation OpenSOC",
     period: "2026",
-    mission: "Website Defense & Monitoring Platform",
-    stack: "Flask / SQLAlchemy",
+    mission: "SIEM Deployment, Threat Detection & Security Monitoring Lab",
+    stack: "Wazuh / Linux / Windows / SIEM",
     availability: "pending",
-    features: ["Website monitoring", "Alerting", "Deception concepts", "Defense rings"],
+    features: [
+      "Wazuh SIEM deployment and configuration",
+      "Centralized security log collection",
+      "Endpoint security monitoring",
+      "Security event and alert investigation",
+      "Hands-on SOC monitoring workflows",
+    ],
   },
 ];
 
