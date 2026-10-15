@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Download, LockKeyhole, UnlockKeyhole } from "lucide-react";
 import SectionHeader from "./SectionHeader.jsx";
@@ -11,7 +12,7 @@ export default function SecurityClearance() {
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = "Shamin_Naushad_SOC_Analyst_Resume.pdf";
+    link.download = "Shamin_Naushad_SOC_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     link.remove();
@@ -43,3 +44,4 @@ export default function SecurityClearance() {
     </section>
   );
 }
+
