@@ -1,5 +1,4 @@
 
-
 import { ExternalLink, FileText, Github } from "lucide-react";
 import SectionHeader from "./SectionHeader.jsx";
 
@@ -8,6 +7,7 @@ const projects = [
     name: "Operation ThreatLens",
     period: "2026",
     mission: "SOC Log Analysis & Threat Detection Platform",
+    status: "MISSION ACCOMPLISHED",
     stack: "Flask / Python",
     availability: "live",
     github: "https://github.com/shaminnaushad",
@@ -22,16 +22,17 @@ const projects = [
   {
     name: "Operation OpenSOC",
     period: "2026",
-    mission: "MISSION ACCOMPLISHED — OpenSOC SIEM Lab",
+    mission: "OpenSOC SIEM Lab",
+    status: "MISSION ACCOMPLISHED",
     stack: "Wazuh / Ubuntu WSL2 / Windows 11 / SIEM",
     availability: "live",
-    github: "https://github.com/shaminnaushadhere",
+    github: "https://github.com/shaminnaushadhere/OpenSOC-Lab",
     features: [
       "Deployed Wazuh manager, indexer, Filebeat, and dashboard",
       "Connected and monitored a Windows 11 endpoint",
       "Verified centralized security event collection",
       "Analyzed endpoint security telemetry",
-      "Practiced SOC monitoring and investigation workflows",
+      "Practiced SOC monitoring workflows",
     ],
   },
 ];
@@ -41,12 +42,12 @@ export default function ProjectOperations() {
     <section className="sentinel-section" id="projects">
       <SectionHeader
         label="Operations"
-        title="Project Operations"
-        subtitle="Portfolio projects framed as security missions with practical deliverables."
+        title="Mission Timeline"
+        subtitle="Completed cybersecurity operations and practical security projects."
       />
 
       <div className="alternating-timeline">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <article
             className="operation-card timeline-card"
             key={project.name}
@@ -60,6 +61,10 @@ export default function ProjectOperations() {
             </p>
 
             <h3>{project.name}</h3>
+
+            <p className="mt-3 text-sentinel-amber font-mono text-xs tracking-widest">
+              {project.status}
+            </p>
 
             <p className="mt-3 text-slate-300">
               {project.mission}
