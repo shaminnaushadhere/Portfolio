@@ -6,9 +6,10 @@ const entries = [
   { title: "Discovered Cybersecurity", status: "Accomplished" },
   { title: "Google Foundations of Cybersecurity Certificate", status: "Accomplished" },
   { title: "HTB / TryHackMe / CyberDefenders Labs", status: "Active" },
-  { title: "Operation ThreatLens", status: "Active" },
+  { title: "Operation ThreatLens", status: "Accomplished" },
+  { title: "OpenSOC Lab", status: "Accomplished" },
   { title: "Operation PhantomNet", status: "Active" },
-  { title: "Security+ In Progress", status: "Active" },
+  { title: "Security+ ", status: "Active - In Progress" },
 ];
 
 export default function MissionTimeline() {
