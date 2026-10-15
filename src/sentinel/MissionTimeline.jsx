@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader.jsx";
 
@@ -7,9 +8,9 @@ const entries = [
   { title: "Google Foundations of Cybersecurity Certificate", status: "Accomplished" },
   { title: "HTB / TryHackMe / CyberDefenders Labs", status: "Active" },
   { title: "Operation ThreatLens", status: "Accomplished" },
-  { title: "OpenSOC Lab", status: "Accomplished" },
+  { title: "Operation OpenSOC", status: "Accomplished" },
   { title: "Operation PhantomNet", status: "Active" },
-  { title: "Security+ ", status: "Active - In Progress" },
+  { title: "Security+", status: "Active - In Progress" },
 ];
 
 export default function MissionTimeline() {
@@ -20,6 +21,7 @@ export default function MissionTimeline() {
         title="Mission Timeline"
         subtitle="A chronological view of training, projects, and current security focus."
       />
+
       <div className="timeline mission-zigzag">
         {entries.map((entry, index) => (
           <motion.article
@@ -31,9 +33,21 @@ export default function MissionTimeline() {
             transition={{ duration: 0.58, ease: "easeOut" }}
           >
             <div className="mission-meta">
-              <span>Mission {String(index + 1).padStart(2, "0")}</span>
-              <b className={entry.status === "Active" ? "active" : "accomplished"}>{entry.status}</b>
+              <span>
+                Mission {String(index + 1).padStart(2, "0")}
+              </span>
+
+              <b
+                className={
+                  entry.status.startsWith("Active")
+                    ? "active"
+                    : "accomplished"
+                }
+              >
+                {entry.status}
+              </b>
             </div>
+
             <h3>{entry.title}</h3>
           </motion.article>
         ))}
