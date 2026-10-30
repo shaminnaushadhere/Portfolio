@@ -7,10 +7,10 @@ const projects = [
     name: "Operation ThreatLens",
     period: "2026",
     mission: "SOC Log Analysis & Threat Detection Platform",
-    status: "MISSION ACCOMPLISHED",
     stack: "Flask / Python",
     availability: "live",
-    github: "https://github.com/shaminnaushad",
+    github: "https://github.com/shaminnaushadhere/ThreatLens",
+    demo: "https://threatlens-cetk.onrender.com/",
     features: [
       "IOC Extraction",
       "MITRE ATT&CK Mapping",
@@ -22,8 +22,7 @@ const projects = [
   {
     name: "Operation OpenSOC",
     period: "2026",
-    mission: "OpenSOC SIEM Lab",
-    status: "MISSION ACCOMPLISHED",
+    mission: "MISSION ACCOMPLISHED — OpenSOC SIEM Lab",
     stack: "Wazuh / Ubuntu WSL2 / Windows 11 / SIEM",
     availability: "live",
     github: "https://github.com/shaminnaushadhere/OpenSOC-Lab",
@@ -32,7 +31,7 @@ const projects = [
       "Connected and monitored a Windows 11 endpoint",
       "Verified centralized security event collection",
       "Analyzed endpoint security telemetry",
-      "Practiced SOC monitoring workflows",
+      "Practiced SOC monitoring and investigation workflows",
     ],
   },
 ];
@@ -42,8 +41,8 @@ export default function ProjectOperations() {
     <section className="sentinel-section" id="projects">
       <SectionHeader
         label="Operations"
-        title="Mission Timeline"
-        subtitle="Completed cybersecurity operations and practical security projects."
+        title="Project Operations"
+        subtitle="Portfolio projects framed as security missions with practical deliverables."
       />
 
       <div className="alternating-timeline">
@@ -61,10 +60,6 @@ export default function ProjectOperations() {
             </p>
 
             <h3>{project.name}</h3>
-
-            <p className="mt-3 text-sentinel-amber font-mono text-xs tracking-widest">
-              {project.status}
-            </p>
 
             <p className="mt-3 text-slate-300">
               {project.mission}
@@ -91,10 +86,17 @@ export default function ProjectOperations() {
                     GitHub
                   </a>
 
-                  <button className="icon-link">
-                    <ExternalLink size={16} />
-                    Demo
-                  </button>
+                  {project.demo && (
+                    <a
+                      className="icon-link"
+                      href={project.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <ExternalLink size={16} />
+                      Demo
+                    </a>
+                  )}
                 </>
               )}
 
