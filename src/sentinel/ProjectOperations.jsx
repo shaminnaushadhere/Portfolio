@@ -10,7 +10,7 @@ const projects = [
     stack: "Flask / Python",
     availability: "live",
     github: "https://github.com/shaminnaushadhere/ThreatLens",
-    demo: "https://threatlens-cetk.onrender.com/",
+    website: "https://threatlens-cetk.onrender.com/",
     features: [
       "IOC Extraction",
       "MITRE ATT&CK Mapping",
