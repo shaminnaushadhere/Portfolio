@@ -26,7 +26,7 @@ export default function SecureContact() {
         </form>
         <aside className="sentinel-card grid content-start gap-3 p-6">
           <a className="contact-link" href="mailto:shaminnaushad432@gmail.com"><Mail /> shaminnaushad432@gmail.com</a>
-          <a className="contact-link" href="https://github.com/shaminnaushad" target="_blank" rel="noreferrer"><Github /> github.com/shaminnaushad</a>
+          <a className="contact-link" href="https://github.com/shaminnaushadhere" target="_blank" rel="noreferrer"><Github /> github.com/shaminnaushad</a>
           <a className="contact-link" href="https://linkedin.com/in/shaminnaushad" target="_blank" rel="noreferrer"><Linkedin /> linkedin.com/in/shaminnaushad</a>
         </aside>
       </div>
