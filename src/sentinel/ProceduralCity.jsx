@@ -151,7 +151,7 @@ const lockTime = 3.7;
 
 // Camera patrol points across the generated city.
 // These are randomized once per visit.
-const patrolPoints = Array.from({ length: 5 }, () => ({
+const patrolPoints = Array.from({ length: 3 }, () => ({
   x: (rand() - 0.5) * 150,
   y: 65 + rand() * 45,
   z: (rand() - 0.5) * 150,
