@@ -12,7 +12,7 @@ export default function SecurityClearance() {
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = "Shamin_Naushad_SOC_Resume.pdf";
+    link.download = "Resume.pdf";
     document.body.appendChild(link);
     link.click();
     link.remove();
