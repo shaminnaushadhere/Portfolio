@@ -22,7 +22,7 @@ export default function GlobalScan({ onComplete }) {
       const id = window.setTimeout(finish, 350);
       return () => window.clearTimeout(id);
     }
-    const statusTimers = [1000, 2350, 3550].map((delay, index) =>
+    const statusTimers = [650, 3700, 4200].map((delay, index) =>
       window.setTimeout(() => setStatus(index + 1), delay)
     );
     const done = window.setTimeout(finish, DURATION);
