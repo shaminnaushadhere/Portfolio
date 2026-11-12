@@ -631,7 +631,7 @@ export default function Earth3D() {
     });
 
     // Show North America initially with northern latitudes visible.
-    earthGroup.rotation.set(-0.35, 1.75, 0);
+    earthGroup.rotation.set(0.45, 1.75, 0);
 
     let dragging = false;
     let moved = false;
