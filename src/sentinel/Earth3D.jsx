@@ -465,7 +465,7 @@ export default function Earth3D() {
         const paths = [
           "/geo/countries.geojson",
           "/geo/us-states.geojson",
-          "/geo/india-states.geojson",
+          "/geo/Indian_States.geojson",
         ];
 
         const responses = await Promise.all(
