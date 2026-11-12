@@ -114,4 +114,4 @@
       {!world && !error && <div className="absolute inset-0 flex items-center justify-center text-cyan-300 text-sm">LOADING GEOGRAPHIC DATA…</div>}
     </div>
   );
-}
+
