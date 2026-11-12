@@ -192,7 +192,7 @@ function animate() {
     ? 1
     : Math.min(elapsed / duration, 1);
 
-  const searchEnd = 0.72;
+  const searchEnd = 0.78;
   const searchProgress = Math.min(t / searchEnd, 1);
 
   // Fast, changing-direction patrol.
