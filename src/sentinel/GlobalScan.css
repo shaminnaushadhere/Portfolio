@@ -64,3 +64,17 @@
 .recon-bottom {
   z-index: 3;
 }
+
+.recon-lock {
+  transition:
+    left 0.13s linear,
+    top 0.13s linear,
+    border-color 0.25s ease,
+    filter 0.25s ease;
+}
+
+.recon-lock.is-locked {
+  transition:
+    left 0.3s ease-out,
+    top 0.3s ease-out;
+}
