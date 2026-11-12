@@ -19,7 +19,13 @@ export default function ProceduralCity({ onProgress }) {
       return;
     }
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
-    renderer.setSize(el.clientWidth, el.clientHeight);
+    // renderer.setSize(el.clientWidth, el.clientHeight);
+    console.log("3D CITY SIZE:", el.clientWidth, el.clientHeight);
+
+renderer.setSize(
+  Math.max(el.clientWidth, 1),
+  Math.max(el.clientHeight, 1)
+);
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.2;
